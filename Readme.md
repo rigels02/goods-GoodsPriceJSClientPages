@@ -6,3 +6,4 @@ Where &lt;host> - http://localhost:8080
 
 Supports pagination.
 
+See repository goods-GoodsPriceSpring for spring boot appliation GoodsPriceSpring.
