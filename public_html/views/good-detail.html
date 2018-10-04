@@ -1,0 +1,47 @@
+<div class="container">
+  <h1>Good detail</h1>
+
+  <form novalidate="novalidate" class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="inputDate">Date:</label>
+
+      <div class="controls">
+        <input type="text" id="inputDate" ng-model="good.cdate"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Name:</label>
+
+      <div class="controls">
+        <input type="text" id="inputName" ng-model="good.name"/>
+      </div>
+    </div>
+      <div class="control-group">
+      <label class="control-label" for="inputShop">Shop:</label>
+
+      <div class="controls">
+        <input type="text" id="inputShop" ng-model="good.shop"/>
+      </div>
+    </div>
+      <div class="control-group">
+      <label class="control-label" for="inputPrice">Price:</label>
+
+      <div class="controls">
+        <input type="text" id="inputPrice" ng-model="good.price"/>
+      </div>
+    </div>
+      <div class="control-group">
+      <label class="control-label" for="inputDiscount">Discount:</label>
+
+      <div class="controls">
+        <input type="text" id="inputDiscount" ng-model="good.discount"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <a ng-click="cancel()" class="btn btn-small ">cancel</a>
+        <a ng-click="updateGood()" class="btn btn-small btn-primary">update good</a>
+      </div>
+    </div>
+  </form>
+</div>

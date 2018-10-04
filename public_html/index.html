@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Index</title>
+    </head>
+    <body ng-app="goodsPrice">
+        <h1>Hello from Spring GoodsPrice</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/dummy">dummy</a></li>
+                    <li><a href="#/goods-list">good-list</a></li>
+                    <!-- li><a href="#/good-detail/1">good-detail/1</a></li -->
+                    <li><a href="#/good-creation">good-creation</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <button value="CORS" onclick="reqest()">Check CORS !</button>
+        <script>
+            function reqest() {
+
+                $.get("http://localhost:8080/goods/dummy", function (data) {
+                    console.log(data);
+                });
+            }
+        </script>
+
+
+        <!-- Add your site or application content here -->
+        <div class="container" ng-view=""></div>
+
+
+        <!-- link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.css">
+        <script src="/webjars/angularjs/1.6.0/angular.js"></script>
+        <script src="/webjars/angularjs/1.6.0/angular-resource.js"></script>
+        <script src="/webjars/angularjs/1.6.0/angular-route.js"></script>
+        <script src="/webjars/jquery/1.11.1/jquery.js"></script>
+        <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+        <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script -->
+        <!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script -->
+        <!-- script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+        <!-- load ngmessages -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.js"></script>
+
+        <link href="css/pagination.css" rel="stylesheet" type="text/css"/>
+        <script src="scripts/services/services.js"></script>
+        <script src="scripts/controllers/controllers.js"></script>
+        <script src="scripts/filter.js" type="text/javascript"></script>
+        <script src="scripts/app_1.js"></script>
+
+    </body>
+</html>

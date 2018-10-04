@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>GoodsPriceJSClientPages</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="angular-resource" version="1.6.2">
+                <file localPath="public_html/js/libs/angular-resource/angular-resource.js" path="angular-resource.js"/>
+                <file localPath="public_html/js/libs/angular-resource/angular-resource.min.js" path="angular-resource.min.js"/>
+                <file localPath="public_html/js/libs/angular-resource/angular-resource.min.js.map" path="angular-resource.min.js.map"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

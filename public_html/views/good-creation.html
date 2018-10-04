@@ -1,0 +1,76 @@
+<div class="container">
+    <h1>Create a new good</h1>
+
+    <form  class="form-horizontal" name="createForm">
+       
+        <div class="control-group">
+            <label class="control-label" for="inputDate">Date:</label>
+
+            <div class="controls">
+                <input type="text" name= "inputDate" id="inputDate" ng-model="good.cdate" placeholder="yyyy-mm-dd" 
+                        required/>
+                <span style="color: red" ng-messages="createForm.inputDate.$error">
+                    <text ng-message="required">Date is required.</text>
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name:</label>
+
+            <div class="controls">
+                <input type="text" name="inputName" id="inputName" ng-model="good.name"
+                       ng-minlength="1" ng-maxlength="5" required />
+                       <span style="color: red" ng-messages="createForm.inputName.$error">
+                    <text ng-message="minlength">Good's Name is too short.</text>
+                    <text ng-message="maxlength">Good's Name is too long.</text>
+                    <text ng-message="required">Good's Name is required.</text>
+                </span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputShop">Shop:</label>
+
+            <div class="controls">
+                <input type="text" name="inputShop" id="inputShop" ng-model="good.shop"
+                       ng-minlength="1" ng-maxlength="5" required  />
+                <span style="color: red" ng-messages="createForm.inputShop.$error">
+                    <text ng-message="minlength">Shop's name is too short.</text>
+                    <text ng-message="maxlength">Shop's name is too long.</text>
+                    <text ng-message="required">Shop's name is required.</text>
+                </span>
+            </div>
+
+
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputPrice">Price:</label>
+
+            <div class="controls">
+                <input type="number" name="inputPrice" id="inputPrice" ng-model="good.price"
+                       step="0.01" required/>
+                <span style="color: red" ng-messages="createForm.inputPrice.$error">
+                    <text ng-message="required">Price is required.</text>
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDiscount">Discount:</label>
+
+            <div class="controls">
+                <input type="number" id="inputDiscount" ng-model="good.discount" step="0.01"  min="0.0" 
+                       ng-init="good.discount=0"/>
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="createNewGood()" class="btn btn-small btn-primary">create new good</a>
+            </div>
+        </div>
+
+
+    </form>
+</div>
